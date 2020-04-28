@@ -29,7 +29,7 @@ To start the container with persistence you can use the following:
 
 ```sh
 docker run -d \
-  --name docker-influxdb-grafana \
+  --name influgraf \
   -p 3003:3003 \
   -p 3004:8083 \
   -p 8086:8086 \
