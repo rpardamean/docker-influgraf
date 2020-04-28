@@ -33,9 +33,9 @@ docker run -d \
   -p 3003:3003 \
   -p 3004:8083 \
   -p 8086:8086 \
-  -v /path/for/influxdb:/var/lib/influxdb \
-  -v /path/for/grafana:/var/lib/grafana \
-  philhawthorne/docker-influxdb-grafana:latest
+  -v influxdb_data:/var/lib/influxdb \
+  -v grafana_data:/var/lib/grafana \
+  influgraf:latest
 ```
 
 To stop the container launch:
